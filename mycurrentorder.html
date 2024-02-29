@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/Responsive.css">
+  <title></title>
+</head>
+
+<body>
+  <div
+    class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </div>
+  <div id="navSlider">
+
+  </div>
+  <nav id="navBar">
+
+  </nav>
+  <div id="icons">
+  </div>
+  <div class="container  section-top">
+    <div class="row align-items-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb my-5">
+          <li class="breadcrumb-item"><a href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M1.5 9.93841C1.5 8.71422 2.06058 7.55744 3.02142 6.79888L8.52142 2.45677C9.97466 1.30948 12.0253 1.30948 13.4786 2.45677L18.9786 6.79888C19.9394 7.55744 20.5 8.71422 20.5 9.93841V16.5C20.5 18.7091 18.7091 20.5 16.5 20.5H15C14.4477 20.5 14 20.0523 14 19.5V16.5C14 15.3954 13.1046 14.5 12 14.5H10C8.89543 14.5 8 15.3954 8 16.5V19.5C8 20.0523 7.55228 20.5 7 20.5H5.5C3.29086 20.5 1.5 18.7091 1.5 16.5L1.5 9.93841Z"
+                  fill="#9D9D9D" stroke="#9D9D9D" stroke-width="1.5" />
+              </svg>
+            </a></li>
+            <li class="breadcrumb-item"><a href="account.html">My account
+            </a></li>
+            <li class="breadcrumb-item fw-semibold" aria-current="page">current order
+            </a></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="gray-bage">
+    <div class="container ">
+      <div class="row ">
+        <h3>My account</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container section-top my-5">
+    <div class="row profile" style="column-gap: 10px;">
+      <div class="col-lg-3 ">
+        <div class="nav flex-lg-column flex-row  nav-pills  px-4 py-5 bg-black" id="v-pills-tab" role="tablist"
+          aria-orientation="vertical">
+          <button class="nav-link  my-1" id="v-pills-home-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+            <div class="row">
+              <div class=" col-12 d-flex flex-column justify-content-center text-center">
+                <h6 class="fw-bold  py-2 my-0 text-uppercase">
+                  account
+                </h6>
+              </div>
+            </div>
+          </button>
+          <button class="nav-link active my-1" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+            type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+            <div class="row">
+              <div class="col-12 d-flex flex-column justify-content-center text-center">
+                <h6 class="fw-bold py-2 my-0 text-uppercase">
+                  Current order
+                </h6>
+
+              </div>
+            </div>
+          </button>
+          <button class="nav-link my-1" id="v-pills-messages-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+            aria-selected="false">
+            <div class="row">
+              <div class="col-12 d-flex flex-column justify-content-center text-center">
+                <h6 class="fw-bold  py-2 my-0 text-uppercase">
+                  last order
+                </h6>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-12" style="min-height: 70vh;">
+        <div class="row ">
+          <div class="col-12 ">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade " id="v-pills-home" role="tabpanel"
+                aria-labelledby="v-pills-home-tab" tabindex="0">
+                <form action="" class="border border-1 border-black px-2">
+                  <div class="row gap-2 my-5 p-2 ">
+                    <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end px-3">
+                      <a href="editProfile.html" class="text-secondary text-decoration-underline" type="button">Edit</a>
+                    </div>
+                    <div class="col-12">
+                      <h6>
+                        Name
+                      </h6>
+                      <p class="fw-bolder">
+                        Hanan a n
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <h6>
+                        Phone number
+                      </h6>
+                      <p class="fw-bolder">
+                        +9734165456478
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <h6>
+                        Email
+                      </h6>
+                      <p class="fw-bolder">
+                        Hanan@gmail.com
+                      </p>
+                    </div>
+
+                    <div class="col-12">
+                      <h6>
+                        Address
+                      </h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          4517 Manama, shaikh daji ave
+                        </label>
+                        <div class="d-flex justify-content-md-end">
+                          <a href="editAddress.html" class="text-secondary text-decoration-underline px-2" type="button">Edit</a>
+                          <a class="text-secondary text-decoration-underline" type="button">delete</a>
+                        </div>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          4517 Manama, shaikh daji ave
+                        </label>
+                        <div class="d-flex justify-content-md-end">
+                          <a href="editAddress.html" class="text-secondary text-decoration-underline px-2" type="button">Edit</a>
+                          <a class="text-secondary text-decoration-underline" type="button">delete</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-12">
+                      <div class="py-2 my-2">
+                        <a>
+                          <span>
+                            <i class="fa-solid fa-plus"></i>
+                          </span>
+                          <span> Add address
+                          </span>
+                        </a>
+                      </div>
+
+
+                    </div>
+                  </div>
+                  <div class="row my-5">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                      <a class="text-black text-decoration-underline w-auto px-3" type="button" href="changePassword.html">Change
+                        password</a>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="row justify-content-center my-5">
+                  <a class="text-danger text-decoration-underline w-auto px-5" type="button"
+                    href="index.html">logout</a>
+                </div>
+              </div>
+              <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+                tabindex="0">
+                <div class="row py-2">
+                  <div class="col-12">
+                    <div class="accordion border border-1 border-black accordion-flush mb-2" id="accordionFlushExample">
+                      <div class="accordion-item ">
+                        <h2 class="accordion-header direction">
+                          <a class="accordion-button collapsed text-black fw-bold my-2 w-100 p-3 rounded d-flex align-items-center phoneButton"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne">
+                            Order number #15876
+                          </a>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="row py-2">
+
+                              <div class="col-lg-10 col-12">
+                                <div class="d-flex align-items-center">
+                                  <div class="flex-shrink-0">
+                                    <img src="assets/imgs/products/Property 1=Default.png" alt="...">
+                                  </div>
+                                  <div class="flex-grow-1 mx-3 d-flex justify-content-between">
+                                    <div>
+                                      <h5>F72 - Crochet</h5>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <span>Black</span>
+                                        <span>Size: 52</span>
+                                      </div>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <span>Quantity: 1</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h5 class="text-secondary">40.000 BHD</h5>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="row py-2">
+
+                              <div class="col-lg-10 col-12">
+                                <div class="d-flex align-items-center">
+                                  <div class="flex-shrink-0">
+                                    <img src="assets/imgs/products/Property 1=Default.png" alt="...">
+                                  </div>
+                                  <div class="flex-grow-1 mx-3 d-flex justify-content-between">
+                                    <div>
+                                      <h5>F72 - Crochet</h5>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <span>Black</span>
+                                        <span>Size: 52</span>
+                                      </div>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <span>Quantity: 1</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h5 class="text-secondary">40.000 BHD</h5>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="accordion border border-1 border-black accordion-flush mb-0" id="accordionFlushExample">
+                      <div class="accordion-item ">
+                        <h2 class="accordion-header direction">
+                          <a class="accordion-button collapsed text-black fw-bold my-2 w-100 p-3 rounded d-flex align-items-center phoneButton"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false" aria-controls="flush-collapsed">
+                            Order number #15876
+                          </a>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="row py-2">
+
+                              <div class="col-lg-10 col-12">
+                                <div class="d-flex align-items-center">
+                                  <div class="flex-shrink-0">
+                                    <img src="assets/imgs/products/Property 1=Default.png" alt="...">
+                                  </div>
+                                  <div class="flex-grow-1 mx-3 d-flex justify-content-between">
+                                    <div>
+                                      <h5>F72 - Crochet</h5>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <span>Black</span>
+                                        <span>Size: 52</span>
+                                      </div>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <span>Quantity: 1</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h5 class="text-secondary">40.000 BHD</h5>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="row py-2">
+
+                              <div class="col-lg-10 col-12">
+                                <div class="d-flex align-items-center">
+                                  <div class="flex-shrink-0">
+                                    <img src="assets/imgs/products/Property 1=Default.png" alt="...">
+                                  </div>
+                                  <div class="flex-grow-1 mx-3 d-flex justify-content-between">
+                                    <div>
+                                      <h5>F72 - Crochet</h5>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <span>Black</span>
+                                        <span>Size: 52</span>
+                                      </div>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <span>Quantity: 1</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h5 class="text-secondary">40.000 BHD</h5>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane fade " id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+                tabindex="0">
+                <div class="row py-2">
+
+                  <div class="col-12">
+                    <div class="accordion border border-1 border-black accordion-flush mb-2" id="accordionFlushExample">
+                      <div class="accordion-item ">
+                        <h2 class="accordion-header direction">
+                          <a class="accordion-button collapsed text-black fw-bold my-2 w-100 p-3 rounded d-flex align-items-center phoneButton"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne">
+                            Order number #15876
+                          </a>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="row py-2">
+
+                              <div class="col-lg-10 col-12">
+                                <div class="d-flex align-items-center">
+                                  <div class="flex-shrink-0">
+                                    <img src="assets/imgs/products/Property 1=Default.png" alt="...">
+                                  </div>
+                                  <div class="flex-grow-1 mx-3 d-flex justify-content-between">
+                                    <div>
+                                      <h5>F72 - Crochet</h5>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <p>Black</p>
+                                        <p><span>Size</span><span>52</span> </p>
+                                      </div>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <p><span>Quantity</span><span>1</span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h5 class="text-secondary">40.000 BHD</h5>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="row py-2">
+
+                              <div class="col-lg-10 col-12">
+                                <div class="d-flex align-items-center">
+                                  <div class="flex-shrink-0">
+                                    <img src="assets/imgs/products/Property 1=Default.png" alt="...">
+                                  </div>
+                                  <div class="flex-grow-1 mx-3 d-flex justify-content-between">
+                                    <div>
+                                      <h5>F72 - Crochet</h5>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <p>Black</p>
+                                        <p><span>Size</span><span>52</span> </p>
+                                      </div>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <p><span>Quantity</span><span>1</span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h5 class="text-secondary">40.000 BHD</h5>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="accordion border border-1 border-black accordion-flush mb-0" id="accordionFlushExample">
+                      <div class="accordion-item ">
+                        <h2 class="accordion-header direction">
+                          <a class="accordion-button collapsed text-black fw-bold my-2 w-100 p-3 rounded d-flex align-items-center phoneButton"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false" aria-controls="flush-collapsed">
+                            Order number #15876
+                          </a>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="row py-2">
+
+                              <div class="col-lg-10 col-12">
+                                <div class="d-flex align-items-center">
+                                  <div class="flex-shrink-0">
+                                    <img src="assets/imgs/products/Property 1=Default.png" alt="...">
+                                  </div>
+                                  <div class="flex-grow-1 mx-3 d-flex justify-content-between">
+                                    <div>
+                                      <h5>F72 - Crochet</h5>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <p>Black</p>
+                                        <p><span>Size</span><span>52</span> </p>
+                                      </div>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <p><span>Quantity</span><span>1</span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h5 class="text-secondary">40.000 BHD</h5>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="row py-2">
+
+                              <div class="col-lg-10 col-12">
+                                <div class="d-flex align-items-center">
+                                  <div class="flex-shrink-0">
+                                    <img src="assets/imgs/products/Property 1=Default.png" alt="...">
+                                  </div>
+                                  <div class="flex-grow-1 mx-3 d-flex justify-content-between">
+                                    <div>
+                                      <h5>F72 - Crochet</h5>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <p>Black</p>
+                                        <p><span>Size</span><span>52</span> </p>
+                                      </div>
+                                      <div class="d-flex  text-secondary justify-content-between">
+                                        <p><span>Quantity</span><span>1</span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <h5 class="text-secondary">40.000 BHD</h5>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="gray-footer">
+  </div>
+  <footer id="footer">
+  </footer>
+  <div id="sideNav">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+    integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="assets/js/index.js"></script>
+
+  <script>
+    AOS.init({
+      once: true
+    })
+  </script>
+</body>
+
+</html>

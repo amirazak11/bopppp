@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="build/css/countrySelect.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/Responsive.css">
+  <title></title>
+</head>
+
+<body>
+  <div
+    class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </div>
+  <div id="navSlider">
+
+  </div>
+  <nav id="navBar">
+
+  </nav>
+  <div class="position-fixed congratulation top-0 start-0 end-0 bottom-0 ">
+
+    <div class="js-container" style="top:0px !important;"></div>
+    </div>
+  <div class="container  section-top">
+    <div class="row align-items-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb my-5">
+          <li class="breadcrumb-item"><a href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path
+                  d="M1.5 9.93841C1.5 8.71422 2.06058 7.55744 3.02142 6.79888L8.52142 2.45677C9.97466 1.30948 12.0253 1.30948 13.4786 2.45677L18.9786 6.79888C19.9394 7.55744 20.5 8.71422 20.5 9.93841V16.5C20.5 18.7091 18.7091 20.5 16.5 20.5H15C14.4477 20.5 14 20.0523 14 19.5V16.5C14 15.3954 13.1046 14.5 12 14.5H10C8.89543 14.5 8 15.3954 8 16.5V19.5C8 20.0523 7.55228 20.5 7 20.5H5.5C3.29086 20.5 1.5 18.7091 1.5 16.5L1.5 9.93841Z"
+                  fill="#9D9D9D" stroke="#9D9D9D" stroke-width="1.5" />
+              </svg>
+            </a></li>
+            <li class="breadcrumb-item fw-semibold" aria-current="page">checkout
+            </a></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="gray-bage">
+    <div class="container ">
+      <div class="row ">
+        <h3>Checkout</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container section-top my-5 ">
+    
+<div class="row justify-content-between">
+<div class="col-lg-7 col-12">
+  <div class="row profile-login justify-content-center" style="column-gap: 10px;">
+    <div class=" col-12 ">
+      <div class="nav flex-row  nav-pills  py-5 justify-content-start" id="v-pills-tab" role="tablist"
+        aria-orientation="vertical">
+        <button class="nav-link active my-1 border border-3 border-end-0 border-start-0 border-top-0 rounded-0" id="v-pills-home-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+          <div class="row">
+            <div class=" col-12 d-flex flex-column justify-content-center text-center">
+              <h6 class="fw-bold  py-2 my-0 text-uppercase text-black">
+                Pickup
+              </h6>
+            </div>
+          </div>
+        </button>
+        <button class="nav-link my-1 border-bottom border border-3 border-end-0 border-start-0 border-top-0 rounded-0" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+          type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+          <div class="row">
+            <div class="col-12 d-flex flex-column justify-content-center text-center">
+              <h6 class="fw-bold py-2 my-0 text-uppercase text-black">
+                Delivery
+              </h6>
+
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class=" col-12 " style="min-height: 70vh;">
+      <div class="row ">
+        <div class="col-lg-8 col-12">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+              aria-labelledby="v-pills-home-tab" tabindex="0">
+              <form >
+                <div class="mb-3">
+                  <label for="Firstname" class="form-label">First name</label>
+                  <input type="text" class="form-control rounded-3 border-black" id="region" placeholder="Firstname">
+                </div>
+                <div class="mb-3">
+                  <label for="Lastname" class="form-label">Last name</label>
+                  <input type="text" class="form-control rounded-3 border-black" id="Lastname" placeholder="Block">
+                </div>
+                <div class="mb-3 d-flex flex-column">
+                  <label for="Email" class="form-label">Contact</label>
+                  <input type="tel" class="form-control rounded-3 w-100 border-black phone" placeholder="Phone number">
+                </div>
+                <div class="mb-3 d-flex flex-column">
+                  <label for="adress" class="form-label">Branch</label>
+                  <select class="form-select border border-1 rounded-3 w-auto px-5 border-black" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="2">2</option>
+                    <option value="DE">3</option>
+                    <option value="SG">4</option>
+                    <option value="AU">5</option>
+                  </select>               
+                 </div>
+                 <div class="mb-3">
+                  <label for="Note" class="form-label">Additional note</label>
+                  <textarea class="form-control rounded-3" id="Note" rows="3" style="resize: none;"></textarea>
+                </div>
+                  <div class="col-12">
+                    <div class="">
+                      <a class="text-black" href="addAddress.html">
+                        <span>
+                          <i class="fa-solid fa-plus"></i>
+                        </span>
+                        <span> Add address
+                        </span>
+                      </a>
+                    </div>
+
+
+                  </div>
+
+              </form>
+
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+              tabindex="0">
+              <div class="row">
+                <div class="col-12">
+                  <form >
+                    <div class="mb-3">
+                      <label for="Firstname" class="form-label">First name</label>
+                      <input type="text" class="form-control rounded-3 border-black" id="region" placeholder="Firstname">
+                    </div>
+                    <div class="mb-3">
+                      <label for="Lastname" class="form-label">Last name</label>
+                      <input type="text" class="form-control rounded-3 border-black" id="Lastname" placeholder="Block">
+                    </div>
+                    <div class="mb-3 d-flex flex-column">
+                      <label for="Email" class="form-label">Contact</label>
+                      <input type="tel" class="form-control rounded-3 w-100 border-black phone" placeholder="Phone number">
+                    </div>
+
+                     <div class="mb-3">
+                      <label for="adress" class="form-label"> address</label>
+                        <div class="w-100 map">
+                          <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918491.7670147931!2d51.148041366102206!3d25.939871683119264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e48524e6a47a211%3A0x2e9450e2dbda1046!2z2KfZhNio2K3YsdmK2YY!5e0!3m2!1sar!2seg!4v1699281499643!5m2!1sar!2seg"
+                            class="w-100 h-100 rounded-3  border-black" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+                        </div>
+                     </div>
+                     <div class="mb-3">
+                      <label for="Note" class="form-label">Additional note</label>
+                      <textarea class="form-control rounded-3" id="Note" rows="3" style="resize: none;"></textarea>
+                    </div>
+    
+                  </form>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-12">
+          <h4>Coupon</h4>
+          <div class="">
+            <a class="text-black" href="addAddress.html" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <span>
+                <i class="fa-solid fa-plus"></i>
+              </span>
+              <span> Add coupon
+              </span>
+            </a>
+          </div>          
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center align-items-center">
+                  <form class="w-100" onsubmit="preventFormSubmission(event)">
+                    <div class="mb-3 text-center d-flex flex-column w-100 align-items-center">
+                      <label for="coupon" class="form-label fs-6">Enter your coupon</label>
+                      <input type="text" class="form-control rounded-3 border-black w-75" id="coupon">
+                    </div>
+                    <div class="mb-3 w-100 d-flex justify-content-center">
+                      <a type="button" id="success"
+                        class="btn btn-dark px-5 btn m-auto border border-1 border-dark rounded-3 gap-2 my-2 py-2">Apply</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+    <div>
+
+
+    </div>
+
+  </div>
+</div>
+<div class="col-lg-4 col-12">
+  <div class="row">
+    <h5 class="text-uppercase py-3"><span>item</span>(<span>4</span>)</h5>
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+
+          <div class=" col-12 py-2">
+            <div class="d-flex align-items-center">
+              <div class="flex-shrink-0">
+                <img src="assets/imgs/products/Property 1=Default.png" alt="...">
+              </div>
+              <div class="flex-grow-1 mx-3 d-flex justify-content-between">
+                <div>
+                  <h5>F72 - Crochet</h5>
+                  <h5 class="text-secondary">40.000 BHD</h5>
+                  <div class="d-flex  text-secondary justify-content-between">
+                    <p>Black</p>
+                    <p><span>Size</span><span>52</span> </p>
+                  </div>
+                  <div class="d-flex  text-secondary justify-content-between">
+                    <p><span>Quantity</span><span>1</span> </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class=" col-12 py-2">
+            <div class="d-flex align-items-center">
+              <div class="flex-shrink-0">
+                <img src="assets/imgs/products/Property 1=Default.png" alt="...">
+              </div>
+              <div class="flex-grow-1 mx-3 d-flex justify-content-between">
+                <div>
+                  <h5>F72 - Crochet</h5>
+                  <h5 class="text-secondary">40.000 BHD</h5>
+                  <div class="d-flex  text-secondary justify-content-between">
+                    <p>Black</p>
+                    <p><span>Size</span><span>52</span> </p>
+                  </div>
+                  <div class="d-flex  text-secondary justify-content-between">
+                    <p><span>Quantity</span><span>1</span> </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <h5 class="text-uppercase py-2">Summary </h5>
+    <div class="border-bottom">
+      <p class="d-flex justify-content-between summary">
+        <span>Subtotal</span>
+        <span>54 BHD</span>
+      </p>
+      <p class="d-flex justify-content-between summary">
+        <span>Shipping</span>
+        <span>54 BHD</span>
+      </p>
+      <p class="d-flex justify-content-between summary">
+        <span>VAT (10%)</span>
+        <span>54 BHD</span>
+      </p>
+      <p class="d-flex justify-content-between summary">
+        <span>Discount</span>
+        <span>-4 BHD</span>
+      </p>
+      <p class="d-flex justify-content-between summary">
+        <span>Total</span>
+        <span>54 BHD</span>
+      </p>
+    </div>
+    <p class="d-flex justify-content-between summary py-2">
+      <span class="fw-bold">Net Total</span>
+      <span>54 BHD</span>
+    </p>
+  </div>
+</div>
+
+</div>
+<div class="row">
+  <div class="mb-3 w-100 d-flex justify-content-center">
+    <a type="button"
+    href="paymentmethods.html"
+      class="btn btn-dark px-4 btn m-auto border border-1 border-dark rounded-3 gap-2 my-2 py-2 ">Proceed to payment</a>
+  </div>
+</div>
+  </div>
+
+  <div id="gray-footer">
+  </div>
+  <footer id="footer">
+  </footer>
+  <div id="sideNav">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+    integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/intlTelInput.min.js"></script>
+  <script src="build/js/countrySelect.js"></script>
+  <script src="assets/js/index.js"></script>
+
+  <script>
+
+    $(".country_selector").countrySelect({
+				preferredCountries: ["bh", "eg", "sd"]
+			});
+    
+  </script>
+<script>
+  let input = document.querySelector(".phone");
+  window.intlTelInput(input, ["bh", "eg", "sd"],{
+  
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/utils.js",
+    });
+  
+  </script>
+  <script>
+
+function preventFormSubmission(event) {
+      event.preventDefault();   
+      triggerConfettiAnimation();
+
+    }
+
+
+    $(document).ready(function(){
+  $("#success").click(function(){
+    $(".congratulation").fadeToggle();
+  });
+});
+    AOS.init({
+      once: true
+    })
+
+// let confetti = new Confetti('success');
+// confetti.setCount(50);
+// confetti.setSize(3);
+// confetti.setPower(75);
+// confetti.setFade(true);
+// // confetti.destroyTarget(true);
+// confetti.destroyTarget(false);
+
+
+
+const Confettiful = function(el) {
+  this.el = el;
+  this.containerEl = null;
+  
+  this.confettiFrequency = 10;
+  this.confettiColors = ['#EF2964', '#00C09D', '#2D87B0', '#48485E','#EFFF1D'];
+  this.confettiAnimations = ['slow', 'medium', 'fast'];
+  
+  this._setupElements();
+  this._renderConfetti();
+};
+
+Confettiful.prototype._setupElements = function() {
+  const containerEl = document.createElement('div');
+  const elPosition = this.el.style.position;
+  
+  if (elPosition !== 'relative' || elPosition !== 'absolute') {
+    this.el.style.position = 'relative';
+  }
+  
+  containerEl.classList.add('confetti-container');
+  
+  this.el.appendChild(containerEl);
+  
+  this.containerEl = containerEl;
+};
+
+Confettiful.prototype._renderConfetti = function() {
+  this.confettiInterval = setInterval(() => {
+    const confettiEl = document.createElement('div');
+    const confettiSize = (Math.floor(Math.random() * 3) + 7) + 'px';
+    const confettiBackground = this.confettiColors[Math.floor(Math.random() * this.confettiColors.length)];
+    const confettiLeft = (Math.floor(Math.random() * this.el.offsetWidth)) + 'px';
+    const confettiAnimation = this.confettiAnimations[Math.floor(Math.random() * this.confettiAnimations.length)];
+    
+    confettiEl.classList.add('confetti', 'confetti--animation-' + confettiAnimation);
+    confettiEl.style.left = confettiLeft;
+    confettiEl.style.width = confettiSize;
+    confettiEl.style.height = confettiSize;
+    confettiEl.style.backgroundColor = confettiBackground;
+    
+    confettiEl.removeTimeout = setTimeout(function() {
+      confettiEl.parentNode.removeChild(confettiEl);
+    }, 3000);
+    
+    this.containerEl.appendChild(confettiEl);
+  }, 25);
+};
+
+window.confettiful = new Confettiful(document.querySelector('.js-container'));
+
+</script>
+</body>
+
+</html>
